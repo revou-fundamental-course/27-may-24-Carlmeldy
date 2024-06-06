@@ -4,8 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agnes Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="logo-icon"></div>
+        <section class="navbar-item-container" >
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#our-facilities">Our Facilities</a>
+            <a class="nav-item" href="#message-us">Message Us</a>
+        </section>
+    </nav>
+    <hr>
+
+    <section class="section-container">
+        <!-- Home -->
+        <section id="home">
+            <header class="konten">
+                <h1>Hi <span id="name"></span>,<br> Welcome to website</h1> <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Illo quae quibusdam ut id alias error porro,
+                repellat blanditiis sed iusto iste. <br>Repellat magni blanditiis dolorum, sit numquam est eum ex?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <br>Nesciunt voluptas laudantium iste iure, 
+                totam eveniet culpa cupiditate porro impedit quos,<br>ex aut repudiandae dicta numquam et accusantium voluptates. <br> Distinctio, praesentium?</p>
+            </header>
+        </section> <br>
+        <hr>
+
+        <!-- Our Facilities -->
+        <section id="our-facilities">
+            <header>
+                <h1>Our Facilities</h1>
+            </header> <br>
     
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="/assets/dapur.png" style="width:100%">
+            <div class="text">Dapur</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <img src="/assets/suiteroom.png" style="width:100%">
+            <div class="text">Suite Room</div>
+        </div>
+  
+        <div class="mySlides fade">
+            <img src="assets/perpusibik.jpg" style="width:100%">
+            <div class="text">Perpustakaan</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="assets/viproom.png" style="width:100%">
+            <div class="text">VIP Room</div>
+        </div>
+
+      <div class="mySlides fade">
+        <img src="assets/labbahasa.jpg" style="width:100%">
+        <div class="text">Lab.Bahasa</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="assets/labworksop.jpg" style="width:100%">
+        <div class="text">Lab.Workshop</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>          
+        </section> <br>
+        <hr>
+
+        <!-- Message Us-->
+        <section class="msg-container">
+            <section class="message-us-section" id="message-us">
+                <section class="form-message">
+                    <h1>Message Us</h1>
+                    <form name="form-input" onsubmit="return displayResult()">
+                        <table>
+                            <tr class="input-form">
+                                <td>Nama :</td>
+                                <td>
+                                    <input type="text" name="nama" id="nama" placeholder="Nama" class="input-nama">
+                                </td>
+                            </tr>
+                            <tr class="input-form">
+                                <td>Tanggal Lahir :</td>
+                                <td>
+                                    <input type="date" name="tgl_lahir" id="tgl_lahir" placeholder=" Tanggal Lahir" class="input-tanggal">
+                                </td>
+                            </tr>
+                            <tr class="input-form">
+                                <td>Jenis Kelamin :</td>
+                                <td>
+                                    <input type="radio" name="jkel" value="Laki-laki" ><label>Laki-laki</label>
+                                    <input type="radio" name="jkel" value="Perempuan" ><label>Perempuan</label>
+                                </td>
+                            </tr>
+                            <tr class="input-form">
+                                <td>Pesan :</td>
+                                <td>
+                                    <textarea name="pesan" id="pesan" placeholder="Pesan" class="input-tag tags"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <p id="error-msg"></p>
+                        <input type="submit" value="Submit" class="submit">
+                    </form>
+                </section>
+            <!-- result -->
+                <section class="result-container">
+                    <div id="form-result">
+                        <p>Current time: <span id="current-date"></span> <span id="current-time"></span></p>
+                        <p>Nama: <span id="user-nama"></span></p>
+                        <p>Tanggal Lahir: <span id="user-tgl-lahir"></span></p>
+                        <p>Jenis Kelamin: <span id="user-jkel"></span></p>
+                        <p>Pesan: <span id="user-pesan"></span></p>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <h4>2024 IBI KESATUAN</h4>
+            </footer>
+        </section>
+    </section>
+
+    
+    <script src="/js/script.js"> </script>
 </body>
 </html>
