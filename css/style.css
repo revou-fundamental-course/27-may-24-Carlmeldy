@@ -13,7 +13,6 @@ nav{
 .logo-icon{
     height: 90px;
     width: 340px;
-    background-image: url(../assets/logo-ibik.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 40px;
@@ -88,7 +87,7 @@ nav{
     font-family: Tahoma;
     text-align: center;
     background-color: brown;
-    background-image: url(/assets/bg1.jpg);
+    background-image: url(../assets/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px black;
@@ -203,7 +202,7 @@ nav{
   justify-content: space-between;
   padding: 20px;
   border: 2px  black;
-  background-image: url(/assets/bg.jpg);
+  background-image: url(../assets/bg.jpg);
 }
 
 .form-message {
