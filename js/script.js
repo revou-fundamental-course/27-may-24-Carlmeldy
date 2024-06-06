@@ -58,12 +58,12 @@ function displayResult(){
 
   return false;
 }
-
-//hasil input message
+// button
 document.getElementsByClassName("submit").addEventListener("click", function(event) {
   event.preventDefault();
 })
 
+//hasil input message
 function setSenderform(nama, tglLahir, jkel, pesan, date, time){
   document.getElementById('current-time').innerHTML = time;
   document.getElementById('user-nama').innerHTML = nama;
